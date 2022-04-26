@@ -25,4 +25,32 @@ console.log (array1.length);
 
 //3
 let array2 = [12, 25, 3, 6, 8, 14, 7, 23];
+let newArray = array2.map(x => x/3);
+console.log(newArray);
 
+//4
+let array3 = ["hello", 125, "javascript", "html", 43, "css", "scss", "bootstrap", 88, 59, "python"];
+let newArray1 = array3.filter(x => typeof(x) == 'number');
+console.log(newArray1);
+
+//5
+let languages = ["html", "css", "javascript", "python", "php"]; 
+let newLanguages = languages.filter (x => x.length > 3);
+console.log(newLanguages);
+
+//6
+let array4= ['academy', 'of', 'digital', 'industries'].reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue; 
+})
+console.log(array4);
+
+//7
+let item = [12, "google", 32, null, "yahoo", 25];
+
+    
+
+
+//8
+let words = ["Madrid", "Rome", "Milan", "Berlin"];
+let newWords = words.filter (n.includes ('mM')); 
+console.log(newWords);
