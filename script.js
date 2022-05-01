@@ -46,11 +46,19 @@ console.log(array4);
 
 //7
 let item = [12, "google", 32, null, "yahoo", 25];
-
+let result = item.map(
+    x=> typeof (x)=="number" ?  x * x * x :
+    typeof (x)=="string" ? x.toUpperCase:
+    x
+)
+console.log(result);
     
 
 
 //8
 let words = ["Madrid", "Rome", "Milan", "Berlin"];
-let newWords = words.filter (n.includes ('mM')); 
-console.log(newWords);
+let newWords = words.filter (function (array){
+    if (array.includes ("m") ||array.includes ("M"))
+        return(array);
+})
+console.log (newWords);
